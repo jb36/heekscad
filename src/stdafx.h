@@ -92,7 +92,7 @@
 #include <BRepFilletAPI_MakeFillet.hxx>
 #include <BRepFilletAPI_MakeFillet2d.hxx>
 #include <BRepGProp.hxx>
-#include <BRepMesh.hxx>
+#include <BRepMesh_Incremental.hxx>
 #include <BRepOffsetAPI_DraftAngle.hxx>
 #include <BRepOffsetAPI_MakeEvolved.hxx>
 #include <BRepOffsetAPI_MakeOffset.hxx>

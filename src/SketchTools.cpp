@@ -669,7 +669,7 @@ std::list<SimplifySketchTool::SortPoint> SimplifySketchTool::GetPoints( TopoDS_W
 
 				TopoDS_Edge edge(TopoDS::Edge(E));
 				BRepTools::Clean(edge);
-				BRepMesh::Mesh(edge, deviation);
+				BRepMesh_IncrementalMesh(edge, deviation);
 
 				TopLoc_Location L;
 				Handle(Poly_Polygon3D) Polyg = BRep_Tool::Polygon3D(edge, L);

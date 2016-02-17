@@ -35,7 +35,7 @@ CFace::~CFace(){
 void CFace::glCommands(bool select, bool marked, bool no_color){
 	bool owned_by_solid = false;
 	if(GetParentBody()) {
-		// using existing BRepMesh::Mesh
+		// using existing BRepMesh_IncrementalMesh
 		// use solid's colour
 		owned_by_solid = true;
 
@@ -108,7 +108,7 @@ void CFace::ModifyByMatrix(const double *m){
 
 void CFace::GetTriangles(void(*callbackfunc)(const double* x, const double* n), double cusp, bool just_one_average_normal){
 	if(GetParentBody()) {
-		// using existing BRepMesh::Mesh
+		// using existing BRepMesh_IncrementalMesh
 	}
 	else {
 		MeshFace(m_topods_face,1/cusp);

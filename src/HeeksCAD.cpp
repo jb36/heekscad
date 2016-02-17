@@ -601,7 +601,7 @@ int HeeksCADapp::OnExit(){
 
 	for(std::list<Plugin>::iterator It = m_loaded_libraries.begin(); It != m_loaded_libraries.end(); It++){
 		wxDynamicLibrary* shared_library = It->dynamic_library;
-		delete shared_library;
+		//delete shared_library;
 	}
 	m_loaded_libraries.clear();
 
